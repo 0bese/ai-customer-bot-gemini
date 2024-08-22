@@ -41,7 +41,6 @@ export async function POST(req) {
           if (itemContent) {
             const text = encoder.encode(itemContent);
             controller.enqueue(text);
-            console.log("content is sent");
           }
         }
       } catch (err) {
